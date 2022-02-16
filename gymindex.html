@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&family=Syne+Tactile&display=swap"
+        rel="stylesheet">
+    <title>gym</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: 'Supermercado One', cursive;
+
+        }
+
+        section::before {
+            content: " ";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        opacity: 0.5;
+            background: url(https://source.unsplash.com/random/gym) no-repeat;
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+
+        .item {
+            /* border: 2px solid red; */
+            position: absolute;
+            padding: 3px;
+            margin: 3px;
+            display: inline;
+            top: 13px;
+        }
+
+        #box3 {
+            position: absolute;
+            right: 0px;
+        }
+
+        #box2 {
+            position: absolute;
+            margin: auto;
+            display: block;
+            width: 45rem;
+            left: 278px;
+        }
+
+        img {
+            width: 93px;
+        }
+
+        p.maintext {
+            text-align: center;
+            font-size: 19px;
+            line-height: 0px;
+            margin: 6px;
+        }
+
+        .navigation {
+            display: inline-block;
+
+
+        }
+
+        li a {
+
+            margin: 342px 34px;
+            font-size: 23px;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        input[type="button"] {
+            background-color: rgb(82, 255, 105);
+            border-radius: 12px;
+            padding: 7px 20px;
+            cursor: pointer;
+            border: none;
+            margin: 7px 4px;
+            font-family: 'Supermercado One', cursive;
+        }
+        input[type="text"] {
+            font-family: 'Supermercado One', cursive;
+            background-color: rgb(255, 163, 243);
+            border-radius: 12px;
+            padding: 7px 20px;
+            cursor: pointer;
+            border: none;
+            margin: 7px 4px;
+        }
+        input[type="submit"]{
+            font-family: 'Supermercado One', cursive;
+            background-color: rgb(77, 243, 255);
+            border-radius: 12px;
+            padding: 7px 20px;
+            cursor: pointer;
+            border: none;
+            margin: 7px 64px;
+        }
+
+        form.login {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.login {
+    /* position: relative; */
+    /* top: auto; */
+    margin: 183px 65px;
+    /* width: 1px; */
+}
+.forme{
+    margin: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <section>
+
+
+
+        <div class="container">
+            <div class="item" id="box1">
+                <img src="dumbbell-gym-logo-design-stock-vector-illustration-isolated-on-white-background-2D6RN8K.jpg"
+                    alt="">
+                <p class="maintext">Lifestyle</p>
+            </div>
+    </section>
+    <div class="item" id="box2">
+        <nav>
+            <ul>
+                <li class="navigation" id="num1"><a href="#">home</a></li>
+                <li class="navigation" id="num2"><a href="#">options</a></li>
+                <li class="navigation" id="num3"><a href="#">menu</a></li>
+                <li class="navigation" id="num4"><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="item" id="box3">
+        <input type="button" value="Sign In">
+        <input type="button" value="Get Started">
+    </div>
+    </div>
+     <form action="backend.php" method="get" class="login">
+     <p class="forme">   <input type="text"placeholder="Enter Your Name"></p> 
+     <p class="forme">   <input type="text"placeholder="Enter adress"></p> 
+     <p class="forme">   <input type="text"placeholder="Enter pincode"></p> 
+     <p class="forme">   <input type="text"placeholder="Enter membership fee"></p> 
+     <p class="forme">   <input type="submit"></p> 
+     </form>
+</body>
+
+</html>
